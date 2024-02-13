@@ -1,1 +1,32 @@
-<! DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+
+
+    <script>
+        let x = document.getElementById("demo");
+
+        function Maposition(){
+            if(navigator.geolocation){
+                navigator.geolocation.watchPosition(MontrerPo);
+            }
+        else{
+            x.innerHTML = "Votre navigateur ne peut pas localiser votre position";
+        }
+    }
+
+    function MontrerPo(position){
+        x.innerHTML = "latitude : " + position.coords.latitude +
+        "\n Longitude : " + position.coords.longitude;
+    }
+
+    Maposition();
+    </script>
+</body>
+</html>
