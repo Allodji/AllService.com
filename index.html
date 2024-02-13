@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-*{
+    <style>*{
     margin: 0;
     padding: 0;
     
@@ -139,19 +137,6 @@ nav li:first-child{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width:800px) {
     .mobile{
         display: none;
@@ -180,11 +165,68 @@ nav li:first-child{
     }
 }
 
+</style>
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar" id="option">
+            <li style="right: 0;"><a href=""><i class="fa fa-close" aria-hidden="true"></i></a></li>
+            <li><a href="#">Coding</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+          
+            <li><a class="" href="#">Coding</a></li>
+            <li><a class="mobile" href="#">Blog</a></li>
+            <li><a class="mobile" href="#">Products</a></li>
+            <li><a class="mobile" href="#">About</a></li>
+            <li><a class="mobile" href="#">Forum</a></li>
+            <li><a class="modile" href="#">Login</a></li>
+            <li id="openBtn" class="openBtn"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+            
+        </ul>
+    </nav>
+
+            <div class="connexion" align="center">
+                <form action="">
+                   <ul>
+                   <li> <input type="text" placeholder="Pseudo"><br></li>
+                   <li> <input type="password" placeholder="Mot de passe"><br></li>
+                   <li><input type="submit" value="Connecter"><br></li>
+                   </ul>
+                </form>
+            </div>
+
+
+
+
+
 
     
     <div id="demo"></div>
 
+ <script>
+        
+        let closeBtn = document.getElementById("closeBtn");
+        let openBtn = document.getElementById("openBtn");
+        let option = document.getElementById("option");
 
+        openBtn.addEventListener('click', function(){
+                option.style.display = "flex";
+        });
+        closeBtn.addEventListener('click', function(){
+                option.style.display = "none";
+        });
+
+
+
+
+    </script>
     <script>
         let x = document.getElementById("demo");
 
