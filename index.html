@@ -1,260 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barre de Navigation Responsive</title>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+        meta
+    </head>
+    <body>
+        <h1 align='center'><mark>BaroDev</mark></h1>
+        <h3 align='center'>Politique et Confidentialité</h3>
+        <div align='center'>
+            **Politique de Confidentialité**
 
-   <!-- <link rel="stylesheet" type="text/css" href="css/all.min.css">-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+Dernière mise à jour : 6 Juin 2024
 
-    <style>*{
-    margin: 0;
-    padding: 0;
-    
+Bienvenue sur BaroDev (« nous », « notre », « nos »). Nous respectons votre vie privée et nous nous engageons à la protéger.
 
-}
+Cette Politique de Confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations personnelles lorsque vous utilisez notre application web. Veuillez lire attentivement cette Politique de Confidentialité.
 
-body{
-    min-height: 100vh;
-    background-image: url("6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-}
+**Collecte d'informations**
 
-nav{
-    background-color: white;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-}
+Nous collectons des informations personnelles que vous nous fournissez directement, comme votre nom, votre adresse e-mail, votre numéro de téléphone et votre mot de passe lorsque vous créez un compte, publiez du contenu, faites un achat ou communiquez avec nous.
 
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   
+**Utilisation de l'information**
 
-}
+Nous utilisons vos informations pour fournir, améliorer, personnaliser et promouvoir nos Services, communiquer avec vous, résoudre des problèmes et sécuriser BaroDev.
 
-nav li{
-    height: 50px;
+**Partage de l'information**
 
-}
+Nous ne partageons vos informations personnelles qu'avec votre consentement, pour fournir les Services que vous avez demandés ou autorisés, ou comme décrit dans cette Politique de Confidentialité.
 
-nav a {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
+**Sécurité**
 
-}
+Nous prenons des mesures de sécurité pour protéger vos informations personnelles contre l'accès non autorisé, l'utilisation abusive ou la divulgation. Cependant, aucun site web, application ou service Internet ne peut garantir une sécurité à 100%.
 
-nav a:hover {
-    background-color: black;
-    color: white;
-   
-}
-nav a:focus {
-       background-color: black;
-     color: white;
-   
-}
+**Modifications de la Politique de Confidentialité**
 
-nav li:first-child{
-    margin-right: auto;
-}
+Nous pouvons modifier cette Politique de Confidentialité de temps en temps. Si nous apportons des modifications, nous vous en informerons en révisant la date en haut de la politique.
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.271);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.162);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+**Contactez-nous**
 
-}
+Si vous avez des questions sur cette Politique de Confidentialité, veuillez nous contacter à developpementweb801@gmail.com.
 
-.sidebar li {
-    width: 100%;
+---
 
-}
-
-.sidebar a {
-    width: 100%;
-}
-
-
-   .openBtn{
-    display: none;
-}
-    
-    .connexion{
-       
-        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-        background-color: rgba(0, 0, 0, 0.607);
-        margin: 10%;
-        padding: 20%;
-        position: center;
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        z-index: 10;
-    
-
-    }
-
-    .connexion li{
-            list-style: none;
-            padding: 10px;
-    }
-
-    .connexion input {
-            padding: 5px;
-            background-color: white;
-            border: none;
-            
-
-    }
-
-    .connexion input[type=text],input[type=password]{
-       
-        background-color: aqua;
-        padding: 10px; 
-        size: 30px;
-        color: white;
-        background-color: rgba(17, 18, 17, 0.489);
-    }
-
-    .connexion input[type=submit]{
-        color: white;
-        background-color: rgb(118, 129, 118);
-        size: 30px !important;
-    }
-
-
-
-
-
-
-@media (max-width:800px) {
-    .mobile{
-        display: none;
-    }
-    .openBtn{
-        display: block;
-    }
-
-    .connexion{
-       
-        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-        background-color: rgba(0, 0, 0, 0.607);
-        margin: 10%;
-        padding: 10%;
-        position: center;
-        backdrop-filter: blur(10px);
-    
-
-    }
-
-}
-
-@media (max-width:400px) {
-    .sidebar{
-        width: 80%;
-    }
-}
-
-</style>
-</head>
-<body>
-
-    <nav>
-        <ul class="sidebar" id="option">
-            <li style="right: 0;"><a href=""><i class="fa fa-close" aria-hidden="true"></i></a></li>
-            <li><a href="#">Coding</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
-        <ul>
-          
-            <li><a class="" href="#">Coding</a></li>
-            <li><a class="mobile" href="#">Blog</a></li>
-            <li><a class="mobile" href="#">Products</a></li>
-            <li><a class="mobile" href="#">About</a></li>
-            <li><a class="mobile" href="#">Forum</a></li>
-            <li><a class="modile" href="#">Login</a></li>
-            <li id="openBtn" class="openBtn"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-            
-        </ul>
-    </nav>
-
-<div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="toast-header">
-    <img src="6.jpeg" class="rounded me-2" alt="...">
-    <strong class="me-auto">Bootstrap</strong>
-    <small>11 mins ago</small>
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-  <div class="toast-body">
-    Hello, world! This is a toast message.
-  </div>
-</div>
-    
-    <div id="demo">
-        
-    </div>
-
- <script>
-        
-        let closeBtn = document.getElementById("closeBtn");
-        let openBtn = document.getElementById("openBtn");
-        let option = document.getElementById("option");
-
-        openBtn.addEventListener('click', function(){
-                option.style.display = "flex";
-        });
-        closeBtn.addEventListener('click', function(){
-                option.style.display = "none";
-        });
-
-
-
-
-    </script>
-    <script>
-        let x = document.getElementById("demo");
-
-        function Maposition(){
-            if(navigator.geolocation){
-                navigator.geolocation.watchPosition(MontrerPo);
-            }
-        else{
-            x.innerHTML = "Votre navigateur ne peut pas localiser votre position";
-        }
-    }
-
-    function MontrerPo(position){
-        x.innerHTML = "latitude : " + position.coords.latitude +
-        "\n Longitude : " + position.coords.longitude;
-    }
-
-    Maposition();
-    </script>
-</body>
+N'oubliez pas de consulter un avocat ou un expert en droit de la vie privée pour s'assurer que votre politique de confidentialité est conforme à toutes les lois et réglementations applicables.
+        </div>
+    </body>
 </html>
